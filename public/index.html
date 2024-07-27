@@ -1,27 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-##############" crossorigin="anonymous">
+    <title>Law MR</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div class="bg-slate-400 hidden md:flex justify-center ">
-        <header class="container flex justify-between p-5">
-            <div class="text-3xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">Welcome</div>
-            <ul class="flex items-center gap-5 text-xl text-gray-700">
-                <li class="hover:text-white"><a href="#">New</a></li>
-                <li class="hover:text-white"><a href="#">Home</a></li>
-                <li class="w-[1px] h-6 bg-gray-700"></li>
-                <li class="hover:text-white"><a href="#">Log in</a></li>
-                <li class="text-white hover:bg-blue-700 bg-blue-800 py-2 px-4 rounded-xl"><a href="https://t.me/MeasRin71">Contact</a></li>
-            </ul>
+
+<body class="bg-gray-100 text-gray-900">
+    <!-- Hero Section with Background Image -->
+    <div class="h-screen w-full bg-cover bg-center bg-fixed" style="background-image: url('https://www.gaffneyzoppi.com/_next/image?url=https%3A%2F%2Fcms.gaffneyzoppi.com%2Fwp-content%2Fuploads%2F2023%2F10%2Fcommercial-law-vs-corporate-law.jpg&w=1920&q=75');">
+        <!-- Desktop Navigation -->
+        <header class="hidden md:flex justify-center bg-white bg-opacity-20 backdrop-blur-md fixed top-0 left-0 right-0 shadow-md">
+            <div class="container flex justify-between p-5">
+                <div class="text-4xl font-bold bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent">
+                    Welcome to <span class="underline font-serif">MR</span>
+                </div>
+                <ul class="flex items-center gap-5 text-lg">
+                    <li class="text-gray-700 hover:text-blue-600"><a href="#new">New</a></li>
+                    <li class="text-gray-700 hover:text-blue-600"><a href="#home">Home</a></li>
+                    <li class="w-[1px] h-6 bg-gray-700"></li>
+                    <li class="text-gray-700 hover:text-blue-600"><a href="#login">Log in</a></li>
+                    <li class="text-white hover:bg-blue-600 bg-blue-700 py-2 px-4 rounded-lg"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </header>
-    
+        
+        <!-- Mobile Navigation -->
+        <header class="flex md:hidden justify-between h-screen w-full bg-cover bg-center bg-fixed" style="background-image: url('photo/Pasted%20image.png');">
+            <div class="container flex justify-between p-3">
+                <div class="text-3xl my-2 text-white" id="toggle"><i class="fas fa-bars"></i></div>
+                <div class="text-3xl font-bold text-white">
+                    Welcome
+                </div>
+            </div>
+        </header>
     </div>
-    
-  
+
+    <!-- Main Content -->
+    <main class="container mx-auto p-8">
+        <!-- Practice Areas Section -->
+        <section id="practice-areas" class="py-16">
+            <h2 class="text-4xl font-bold mb-8 text-gray-900">Our Practice Areas</h2>
+            <p class="mb-8 text-lg text-gray-700">At our firm, we specialize in a range of legal areas to provide comprehensive support for our clients' needs. Our experienced attorneys are dedicated to offering expert guidance and representation in the following areas:</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Family Law</h3>
+                    <p class="mb-4 text-gray-600">Providing comprehensive legal support for family-related matters including divorce, custody, and adoption.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Criminal Law</h3>
+                    <p class="mb-4 text-gray-600">Defending clients accused of criminal offenses with effective defense strategies and legal representation.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Corporate Law</h3>
+                    <p class="mb-4 text-gray-600">Offering legal support for business operations, including company formation, mergers, and corporate compliance.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Learn More</a>
+                </div>
+                <!-- Repeat for other practice areas -->
+            </div>
+        </section>
+        
+
+        <!-- Blog Section -->
+        <section id="blog" class="bg-gray-200 py-16">
+            <h2 class="text-4xl font-bold mb-8 text-gray-900">Legal Blog</h2>
+            <p class="mb-8 text-lg text-gray-700">Stay informed with the latest updates, insights, and legal advice from our experienced team. Our blog covers a wide range of topics to help you navigate the legal landscape with confidence.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Understanding Your Rights in Legal Situations</h3>
+                    <p class="mb-4 text-gray-600">An overview of your rights in various legal situations. Stay informed and protect yourself with our expert advice.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">Recent Changes in Family Law Legislation</h3>
+                    <p class="mb-4 text-gray-600">Explore recent updates in family law and what they mean for you. Our analysis helps you stay up-to-date with the latest legal developments.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+                <article class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <h3 class="text-2xl font-semibold mb-4 text-gray-900">What to Do After a Car Accident: A Legal Guide</h3>
+                    <p class="mb-4 text-gray-600">Find out the essential steps to take following a car accident and how to navigate the legal process with confidence.</p>
+                    <a href="#" class="text-blue-600 hover:underline">Read More</a>
+                </article>
+                <!-- Repeat for additional blog posts -->
+            </div>
+            <div class="mt-8 text-center">
+                <a href="#" class="text-blue-600 hover:underline">View All Posts</a>
+            </div>
+        </section>
+        
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <!-- Introduction -->
+                <div class="mb-12 text-center">
+                    <h2 class="text-4xl font-bold mb-4 text-gray-900">About Us</h2>
+                    <p class="text-lg text-gray-700">At [Law Firm Name], our commitment to excellence and integrity drives us to provide unparalleled legal services. We understand that legal matters are personal and impactful, and our dedicated team is here to guide you with expertise and compassion.</p>
+                </div>
+                
+                <!-- Our Team -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Meet Our Team</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member1.jpg" alt="John Doe" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Meas Rin</h4>
+                            <p class="text-gray-600 mb-2">Managing Partner</p>
+                            <p class="text-gray-700">With over 20 years of experience in corporate law, John specializes in mergers and acquisitions. His strategic insights and dedication make him a trusted advisor to our clients.</p>
+                        </div>
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member2.jpg" alt="Jane Smith" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Mach Mul</h4>
+                            <p class="text-gray-600 mb-2">Senior Attorney</p>
+                            <p class="text-gray-700">Jane brings extensive experience in family law, focusing on complex custody and divorce cases. Her empathetic approach and meticulous attention to detail make her an invaluable asset to our firm.</p>
+                        </div>
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member3.jpg" alt="Michael Johnson" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Li hout</h4>
+                            <p class="text-gray-600 mb-2">Litigation Specialist</p>
+                            <p class="text-gray-700">Michael excels in high-stakes litigation with a focus on commercial disputes. His analytical skills and tenacity have earned him a reputation as a fierce advocate for our clients.</p>
+                        </div>
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member4.jpg" alt="Emily Davis" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Duk Panha</h4>
+                            <p class="text-gray-600 mb-2">Estate Planning Attorney</p>
+                            <p class="text-gray-700">Emily specializes in estate planning and trusts, helping clients navigate the complexities of inheritance laws. Her meticulous planning ensures that her clients' wishes are carried out effectively.</p>
+                        </div>
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member5.jpg" alt="David Wilson" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Pom Phearun</h4>
+                            <p class="text-gray-600 mb-2">Corporate Lawyer</p>
+                            <p class="text-gray-700">David focuses on corporate law and regulatory compliance. His expertise in corporate governance and his strategic insights are crucial in navigating complex legal landscapes for businesses.</p>
+                        </div>
+                        <!-- Team Member -->
+                        <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <img src="team-member6.jpg" alt="Sophia Martinez" class="w-full h-48 object-cover rounded-t-lg mb-4">
+                            <h4 class="text-xl font-semibold mb-2 text-gray-900">Nhom Pheareak</h4>
+                            <p class="text-gray-600 mb-2">Criminal Defense Attorney</p>
+                            <p class="text-gray-700">Sophia has a strong track record in criminal defense, providing aggressive representation for clients facing serious charges. Her dedication to justice and detailed preparation are her hallmarks.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mission and Values -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Our Mission & Values</h3>
+                    <p class="text-lg text-gray-700">Our mission is to provide exceptional legal representation with a focus on client-centered service. We uphold the highest standards of professionalism, transparency, and ethical practice, committed to achieving the best outcomes for our clients.</p>
+                </div>
+                
+                <!-- Firm History -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Our History</h3>
+                    <p class="text-lg text-gray-700">Founded in [Year], [Law Firm Name] has built a legacy of legal excellence. From our early days to becoming a leader in the industry, our firm has consistently delivered outstanding results and earned a reputation for reliability and expertise.</p>
+                </div>
+                
+                <!-- Community Involvement -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Community Involvement</h3>
+                    <p class="text-lg text-gray-700">We are dedicated to making a positive impact in our community through pro bono work and support for local initiatives. Our team actively participates in various charitable activities, reflecting our commitment to social responsibility.</p>
+                </div>
+                
+                <!-- Client Testimonials -->
+                <div class="mb-12">
+                    <h3 class="text-3xl font-semibold mb-8 text-gray-900">Client Testimonials</h3>
+                    <div class="bg-gray-100 p-8 rounded-lg shadow-lg">
+                        <blockquote class="text-lg italic text-gray-700">
+                            "The expertise and dedication of [Law Firm Name] were evident from start to finish. Their personalized approach and commitment to our case made all the difference. Highly recommended!" 
+                            <footer class="mt-4 font-semibold text-gray-900">- [Client Name]</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                
+                <!-- Call to Action -->
+                <div class="text-center">
+                    <a href="#contact" class="bg-blue-700 text-white py-3 px-6 rounded-lg text-lg hover:bg-blue-800 transition-colors duration-300">Get in Touch with Us</a>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white py-16">
+            <h2 class="text-4xl font-bold mb-8 text-gray-900">Contact Us</h2>
+            <form action="#" method="POST" class="bg-gray-50 p-8 rounded-lg shadow-lg">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-semibold mb-2 text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-semibold mb-2 text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-3 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-semibold mb-2 text-gray-700">Message</label>
+                    <textarea id="message" name="message" class="w-full p-3 border rounded" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-700 py-2 px-4 rounded text-white hover:bg-blue-800">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Lawer MeasRin. All rights reserved.</p>
+            <div class="mt-4">
+                <a href="#" class="text-blue-400 hover:underline">Privacy Policy</a> |
+                <a href="#" class="text-blue-400 hover:underline">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
